@@ -13,8 +13,8 @@ export default createStore({
       state.todoList.push({ id: uuidv4(), todo, isEdit: false });
     },
     getTodoList(state) {
-      state.todoList = JSON.parse(localStorage.getItem('todoList'));
-      state.todoToday = JSON.parse(localStorage.getItem('todoToday'));
+      state.todoList = JSON.parse(localStorage.getItem('todoList')) || [];
+      state.todoToday = JSON.parse(localStorage.getItem('todoToday')) || [];
     },
     delTodoList(state, { id }) {
       let newTodo = state.todoList.filter((todo) => todo.id !== id);
