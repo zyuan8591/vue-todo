@@ -4,4 +4,6 @@ import router from './router';
 import store from './store';
 import './assets/tailwind.css';
 
+console.log('hello')
+
 createApp(App).use(store).use(router).mount('#app');
