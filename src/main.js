@@ -6,4 +6,5 @@ import './assets/tailwind.css';
 
 console.log('hello')
 
+console.log('test-main')
 createApp(App).use(store).use(router).mount('#app');
